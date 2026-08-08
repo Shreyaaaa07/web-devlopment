@@ -8,13 +8,37 @@
 <body>
     <script>
         console.log("javascript function")
-        let a1 = 556;
-        let b = 78;
+        let a1 = 4;
+        let b1 = 8;
 
-        let sum1 = a + b;
-        let average1 = sum / 2;
-        let averagePlusone1 = average + 1;
+        let sum1 = a1 + b1;
+        let average1 = sum1 / 2;
+        let averagePlusone1 = average1 + 1;
         console.log(averagePlusone1)
+          
+        function add(a, b) {
+  return a + b;
+}
+ 
+        let result = add(5, 3); // 8
+        console.log(result);
+
+        const square =(number) => {
+            return number * number;
+        }
+        console.log(square(4)); // 16
+
+        const multiply = () => {
+            let a = 5;
+            let b = 10;
+            return a * b;
+        }
+        console.log(multiply()); // 50
+
+        const greet = () => {
+            console.log("Hello, World!");
+        }
+        console.log(greet()); // Hello, World!
     </script>
 </body>
 </html>
