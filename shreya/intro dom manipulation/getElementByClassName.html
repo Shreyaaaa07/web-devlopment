@@ -13,7 +13,10 @@
     <button oneclick="magic()">Do the magic</button>
     <script>
         function magic(){
-            let b1 = document.getElementBy
+            let divs = document.getElementByName("div")
+            for (element in divs){
+                element.innerHTML = element.innerHTML + "<p>atharva is bad boy</p>"
+            }
         }
     </script>   
 </body>
