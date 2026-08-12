@@ -9,8 +9,8 @@
     <div class="container">
         <div id="welcome">welcome to my form</div>
         <from action="">
-            <input type="text" id="name" value="harry">
-            <input type="submit" value="submmit">
+            <input type="text" id="username" value="harry">
+            <input id="submit" value="submmit">
         </from>
 
     </div>
@@ -18,8 +18,10 @@
         const welcome = document.getElementById("welcome")
         console.log(welcome)
         // welcome.innerHTML = "<h1>Enter your info </h1>"
-        welcome.textContent = "Fill this form"
-        const input = document.getElementById
-        ("name")
+        // welcome.textContent = "Fill this form"
+        const input = document.getElementById("username")
+        input.value = "harry is a good boy"
+
+        console.log(input.value)
     </script>
 </html>
