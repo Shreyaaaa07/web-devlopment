@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Events</title>
 </head>
 <body>
     <div class="container"
@@ -13,10 +13,11 @@
     </div>
     <span id="firstSpan">I am a span</span>     
     <input type="text">
+
     <script>
         const firstSpan = document.getElementById("fristspan")
         fristSpan.addEventListner('click', ()=>{
-            alert("hey")
+            alert("Hey")
         })
         const imput = document.getElementById("input")
         input.addEventListener("keyup", ()=>{
