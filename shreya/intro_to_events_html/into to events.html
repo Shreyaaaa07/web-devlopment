@@ -12,16 +12,17 @@
         <div class="box">Box 3</div>
 
     </div>
+    <script src="index.js"></script>
     <span id="firstSpan">I am a span</span>     
     <input id="input" type="text">
 
     <script>
         const firstSpan = document.getElementById("fristspan")
-        fristSpan.addEventListner('click', ()=>{
+        firstSpan.addEventListner('click', ()=>{
             alert("Hey")
         })
-        const imput = document.getElementById("input")
-        input.addEventListener("keyup", ()=>{
+        const input = document.getElementById("input")
+        input.addEventListener("keydown", ()=>{
             alert("key pressed")
         })
     </script>
