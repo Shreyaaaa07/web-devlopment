@@ -9,3 +9,12 @@ setTimeout(() => {
 }, 1000);
 
 console.log("C");
+
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Waiting over");
+}, 2000);
+
+console.log("End");
+
