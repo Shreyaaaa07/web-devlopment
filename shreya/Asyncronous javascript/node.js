@@ -9,8 +9,3 @@ setTimeout(() => {
 }, 1000);
 
 console.log("C");
-
-// Output:
-// A
-// C
-// B (after about 1 second)
