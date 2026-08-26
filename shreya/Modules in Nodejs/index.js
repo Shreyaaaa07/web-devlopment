@@ -1,12 +1,13 @@
-function add (a, b){
-    let c = a + b
-    return c 
+const fs = require('fs');
+const data = fs.readFileSync('file.txt', 'utf8');
+console.log(data);
+
+// math.js
+function add(a, b) {
+  return a + b;
 }
 
-const WeirdFunction = ()=>
-    return "I am weird"
-
-module.exports = {add, weirdFunction}
+module.exports = { add };
 
 // app.js
 const math = require('./math');
