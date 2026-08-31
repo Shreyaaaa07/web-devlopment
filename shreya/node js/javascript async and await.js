@@ -11,7 +11,6 @@ async function runTask() {
 
   const result = await waitTwoSeconds();
   console.log(result);
-
   console.log("End");
 }
 
