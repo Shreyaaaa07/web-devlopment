@@ -1,11 +1,15 @@
-const express = required('express')
-const app = express()
-const port = 3000
+app.get('/about', (req, res) => {
+  res.send('About Page');
+});
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+app.post('/contact', (req, res) => {
+  res.send('Contact form submitted');
+});
 
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
-})
+app.put('/user/:id', (req, res) => {
+  res.send(`Update user with ID ${req.params.id}`);
+});
+
+app.delete('/user/:id', (req, res) => {
+  res.send(`Delete user with ID ${req.params.id}`);
+});
